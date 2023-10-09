@@ -28,8 +28,8 @@ async function fetchNotes() {
       apikey: process.env.apikey as string,
     }),
 
-    // デフォルト force-cache
-    cache: "no-store" // SSR 
+    // デフォルト force-cache // SSG キャッシュを必ず生成
+    cache: "no-store" // SSR  キャッシュを生成せず毎回レンダリング
     // next: { revalidate: 10 }, // ISR  指定秒数ごとにキャッシュを生成
   })
 

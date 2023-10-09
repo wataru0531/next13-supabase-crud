@@ -24,7 +24,7 @@ export default function Page() {
           <NotesList />
         </Suspense>
         
-        {/* TimerCounterはクライアントコンポーネントなのですぐに表示できるのでストリーミングHTMLを有効化する */}
+        {/* TimerCounterはクライアントコンポーネントなのですぐに表示できるのでストリーミングHTMLを有効化する。サーバーコンポネントにはSuspense */}
         <TimerCounter />
 
         <RefreshBtn />
