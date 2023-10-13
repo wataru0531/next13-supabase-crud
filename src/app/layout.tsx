@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   description: 'udemy講座',
 }
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   
   return (
@@ -28,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         
           <Navbar />
-          {children}
+          { children }
         
       </body>
     </html>

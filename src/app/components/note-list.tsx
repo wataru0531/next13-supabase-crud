@@ -10,7 +10,7 @@ NEXT_PUBLICを使わずに小文字で定義してサーバー側で使えばク
 ***************************************************************/
 
 
-import { Database } from "../../../database.types"; // 型をインポート
+import type { Database } from "../../../database.types"; // 型をインポート
 import { format } from "date-fns";
 
 // 

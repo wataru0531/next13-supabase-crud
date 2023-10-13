@@ -4,16 +4,13 @@
 
 ***************************************************************/
 
-
-
-const ThirdLayout = ({ children }: { children: React.ReactNode }) => {
+const NotFound = () => {
 
   return(
-    <div>
-      <p>Layout 3</p>
-      { children }
+    <div className="my-6">
+      Task Detail Not Found
     </div>
   )
 }
 
-export default ThirdLayout;
+export default NotFound;

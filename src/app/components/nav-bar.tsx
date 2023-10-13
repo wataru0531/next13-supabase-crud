@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="space-x-4">
         <Link
           href="/"
-          className="rounded bg-bray-700 px-3 py-2 text-white hover:bg-gray-500"
+          className="rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500"
         >
           Home
         </Link>
