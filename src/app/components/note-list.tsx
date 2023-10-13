@@ -10,7 +10,7 @@ NEXT_PUBLICを使わずに小文字で定義してサーバー側で使えばク
 ***************************************************************/
 
 
-import { Database } from "../../../database.types"; // 型をインポート
+import type { Database } from "../../../database.types"; // 型をインポート
 import { format } from "date-fns";
 
 // 
@@ -28,8 +28,8 @@ async function fetchNotes() {
       apikey: process.env.apikey as string,
     }),
 
-    // デフォルト force-cache
-    cache: "no-store" // SSR 
+    // デフォルト force-cache // SSG キャッシュを必ず生成
+    cache: "no-store" // SSR  キャッシュを生成せず毎回レンダリング
     // next: { revalidate: 10 }, // ISR  指定秒数ごとにキャッシュを生成
   })
 

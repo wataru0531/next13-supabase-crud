@@ -8,7 +8,6 @@
 import { useState, useEffect } from "react";
 
 
-
 const TimerCounter = () => {
   const [ count, setCount ] = useState<number>(0);
 

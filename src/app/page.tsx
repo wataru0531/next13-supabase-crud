@@ -5,7 +5,7 @@
 ***************************************************************/
 import { Suspense } from "react";
 
-import NotesList from './components/notex-list'
+import NotesList from './components/note-list'
 import TimerCounter from './components/timer-counter'
 import Spinner from "./components/spinner";
 import RefreshBtn from "./components/refresh-button";
@@ -24,7 +24,7 @@ export default function Page() {
           <NotesList />
         </Suspense>
         
-        {/* TimerCounterはクライアントコンポーネントなのですぐに表示できるのでストリーミングHTMLを有効化する */}
+        {/* TimerCounterはクライアントコンポーネントなのですぐに表示できるのでストリーミングHTMLを有効化する。サーバーコンポネントにはSuspense */}
         <TimerCounter />
 
         <RefreshBtn />
